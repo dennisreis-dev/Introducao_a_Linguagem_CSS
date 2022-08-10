@@ -1,0 +1,14 @@
+/*Introdução a linguagem CSS*/
+body{
+    background-color: rgb(143, 153, 169);
+}
+
+#timao{
+    color: red;
+}
+
+#loucos{
+    color: blue;
+    font-style: italic bold;
+    font-size: 24px;
+}
