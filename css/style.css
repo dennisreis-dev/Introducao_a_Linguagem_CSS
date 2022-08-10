@@ -1,16 +1,39 @@
 /*Introdução a linguagem CSS*/
+/*Qual a diferença entre a propriedade margin e a propriedade padding?
+Dada uma div, margin é a "margem externa" e padding é a "margem interna".*/
+
+/* TAGs */
+
 *{
     margin: 0;
     padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 body{
-    background-color: rgb(143, 153, 169);
+    background-color: rgb(10, 10, 10);
 }
 header{
-    background-color: green;
-    height: 100px;  
+    color: white;
+    padding: 50px;
+    background-color: #007792;
+    height: 90px;    
 }
+
+
+footer{
+    clear: both; /* Sempre que utilizarmso um float em uma div acima,
+    tem que utilizar o clear: both; para deixar ela visivel*/
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: #007792;
+    height: 50px;
+    padding: 10px 0px 0px 100px;
+
+ }
+
+/* IDs */
 
 #timao{
     color:white;
@@ -28,14 +51,30 @@ header{
 
 #esquerda{
     background-color: blue;
+    min-height: 200px;
+    width: 60%;
+    float: left;
 }
 
 #direita{
     background-color: rebeccapurple;
+    min-height: 200px;
+    width: 40%;
+    float: right;
+}
+
+#logo{
+
+top: auto;
     
 }
- footer{
-    background-color: rgb(8, 132, 132);
-    height: 100px;
+
+ /* CLASSs */
+
+ .container{
+    width: 960px;
+    margin: auto;
+
+
 
  }
