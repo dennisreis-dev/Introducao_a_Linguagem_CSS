@@ -2,53 +2,69 @@
 /*Qual a diferença entre a propriedade margin e a propriedade padding?
 Dada uma div, margin é a "margem externa" e padding é a "margem interna".*/
 
-/* TAGs */
+/* -------------------- TAGs -------------------- */
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Helvetica, Arial, sans-serif;
 }
 
-body{
+body {
     background-color: rgb(10, 10, 10);
 }
-header{
+
+header {
     color: white;
     padding: 50px;
     background-color: #007792;
-    height: 90px;    
+    height: 90px;
 }
 
 
-footer{
-    clear: both; /* Sempre que utilizarmso um float em uma div acima,
+footer {
+    clear: both;
+    /* Sempre que utilizarmso um float em uma div acima,
     tem que utilizar o clear: both; para deixar ela visivel*/
     color: white;
     padding: 10px;
     text-align: center;
     background-color: #007792;
     height: 50px;
-    padding: 10px 0px 0px 100px;
+    padding: 10px;
 
- }
+}
 
-/* IDs */
+h1 {
+    color: #FF7F50;
+    text-align: center;
+    text-shadow: 1px 1px 1px #111111;
+    margin:0 0 50px 0;
+    
+}
 
-#timao{
-    color:white;
+p{
+    color: white;
+    font-size: 15px;
+    font-family: asdf, Arial, 'Times New Roman', Times, serif;
+}
+/*-------------------- IDs -------------------- */
+
+#timao {
+    color: white;
     padding: 10px;
     text-align: center;
 }
 
-#loucos{
-    color:white;
+#loucos {
+    color: white;
     padding: 10px;
     text-align: center;
     font-style: italic bold;
     font-size: 24px;
 }
 
+/*
 #esquerda{
     background-color: blue;
     min-height: 200px;
@@ -62,19 +78,50 @@ footer{
     width: 40%;
     float: right;
 }
+*/
+#principal{
+    clear: both;
+    background-image: url(../images/cidade.jpg);
+    background-size: 100%;
+    min-height: 400px;
+    padding: 100px 0 0 0;
 
-#logo{
-
-top: auto;
-    
+        
 }
 
- /* CLASSs */
+#logo {
+ 
+    float: left;
+}
 
- .container{
+#menu{
+    margin-top: 30px;
+    float: right;
+
+}
+
+#menu a{
+    padding: 90px 20px;
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 1px #111111;
+
+}
+
+#menu a:hover{
+    background-color:#008B8B;
+    color: #ffffff;
+
+}
+
+/*-------------------- CLASSs -------------------- */
+
+.container {
     width: 960px;
     margin: auto;
+}
 
-
-
- }
+.efeito{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 80px 0 80px 0;
+}
